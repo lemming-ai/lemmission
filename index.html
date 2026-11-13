@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="커미션 안내 및 신청 링크">
+  <title>COMMISSION | 커미션 안내</title>
+  <style>
+    :root{--bg:#fff0f5;--paper:#fffdfd;--pink:#e9bdcf;--light:#fff5f9;--deep:#ad718a;--text:#7b6270;--line:#efd1dd}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;padding:42px 16px;font-family:Arial,'Malgun Gothic',sans-serif;color:var(--text);background:radial-gradient(#fff 1.5px,transparent 1.5px) 0 0/23px 23px,var(--bg)}
+    a{color:inherit;text-decoration:none}
+    a:focus-visible{outline:2px solid var(--deep);outline-offset:4px}
+    .shell{max-width:820px;margin:auto;padding:12px;background:white;border:1px solid var(--line);box-shadow:0 0 0 7px #fff8fb,0 0 0 9px var(--line),0 14px 38px #ad718a20}
+    .inner{padding:35px 43px 30px;border:1px dashed #e4afc4;background:var(--paper)}
+    header{text-align:center;padding:15px 0 43px}
+    .deco{color:#d5a2b7;letter-spacing:5px;font-size:14px}
+    h1{font:normal clamp(32px,7vw,54px) Georgia,serif;letter-spacing:.14em;color:var(--deep);margin:18px 0 8px}
+    .sub{font:italic 12px Georgia,serif;letter-spacing:2px;color:#bc95a6;margin:0}
+    .notice{display:flex;align-items:center;gap:15px;padding:17px 20px;border:1px solid var(--line);background:var(--light)}
+    .notice .star{font-size:25px;color:#be8ba2}
+    .notice .copy{flex:1;min-width:0}
+    .notice h2{font:normal 17px Georgia,serif;letter-spacing:2px;color:var(--deep);margin:0 0 6px}
+    .notice p{font-size:12px;margin:0;line-height:1.7}
+    .notice a{white-space:nowrap;font:12px Georgia,serif;padding:10px 13px;border:1px solid var(--line);background:#fff}
+    section{scroll-margin-top:25px}
+    .section-title{display:flex;align-items:center;justify-content:center;gap:16px;margin:45px 0 20px;color:var(--deep)}
+    .section-title::before,.section-title::after{content:"";height:1px;width:68px;background:var(--line)}
+    .section-title h2{font:normal 18px Georgia,serif;letter-spacing:2px;margin:0;text-align:center}
+    .links{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+    .link{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;min-height:102px;border:1px solid var(--line);background:var(--light);box-shadow:inset 0 0 0 5px white;transition:transform .2s,background .2s}
+    .link:hover,.type-card:hover{transform:translateY(-4px);background:#fceaf1}
+    .link .symbol{font-size:28px;color:var(--deep);line-height:1}
+    .link .name{font:11px Georgia,serif;letter-spacing:1px;color:var(--deep)}
+    .desc{text-align:center;font-size:12px;color:#af8a9b;margin:-5px 0 22px}
+    .types{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+    .type-card{padding:9px;border:1px solid var(--line);background:#fff;transition:transform .2s,background .2s}
+    .preview{aspect-ratio:4/3;display:grid;place-items:center;border:1px solid #f3dbe4;background:linear-gradient(135deg,#fff0f5,#f8dfe9);color:#ce9cb1;font:normal clamp(25px,5vw,42px) Georgia,serif;letter-spacing:3px;background-size:cover;background-position:center}
+    /* 샘플 그림을 업로드하면 아래 주석을 해제하여 파일명을 연결하세요. */
+    /* .sd{background-image:url('images/sd.jpg')} */
+    /* .ld{background-image:url('images/ld.jpg')} */
+    /* .line{background-image:url('images/line.jpg')} */
+    /* .fixed{background-image:url('images/fixed.jpg')} */
+    .type-label{display:flex;align-items:center;justify-content:space-between;padding:14px 7px 6px}
+    .type-label strong{font:normal 18px Georgia,serif;letter-spacing:1px;color:var(--deep)}
+    .type-label small{display:block;margin-top:6px;font-size:11px;color:#a98a99}
+    .type-label .arrow{font-size:21px;color:#c28fa6}
+    .detail{margin-top:24px;border:1px solid var(--line);padding:23px 25px;background:#fffafa}
+    .detail h3{font:normal 21px Georgia,serif;color:var(--deep);margin:0 0 12px}
+    .detail p{font-size:13px;line-height:1.9;margin:0}
+    .detail .back{display:inline-block;margin-top:14px;font-size:12px;color:var(--deep);text-decoration:underline;text-underline-offset:3px}
+    footer{border-top:1px solid var(--line);margin-top:45px;padding-top:27px;text-align:center;font:italic 12px Georgia,serif;color:#bd92a6}
+    @media(max-width:600px){body{padding:22px 13px}.inner{padding:26px 17px}.shell{padding:8px}header{padding-bottom:32px}h1{letter-spacing:.08em}.notice{padding:13px 11px;gap:8px}.notice .star{font-size:19px}.notice a{padding:8px;font-size:10px}.links{gap:7px}.link{min-height:88px}.link .symbol{font-size:24px}.link .name{font-size:9px;letter-spacing:0}.types{gap:11px}.type-card{padding:5px}.type-label{padding:11px 5px 5px}.type-label strong{font-size:15px}.type-label small{font-size:10px}.detail{padding:19px 16px}.section-title::before,.section-title::after{width:28px}.section-title h2{font-size:16px}}
+  </style>
+</head>
+<body>
+<div class="shell"><div class="inner">
+  <header id="top">
+    <div class="deco">୨୧ ─ ♡ ─ ୨୧</div>
+    <h1>COMMISSION</h1>
+    <p class="sub">commission information</p>
+  </header>
+
+  <div class="notice">
+    <span class="star" aria-hidden="true">✦</span>
+    <div class="copy"><h2>NOTICE</h2><p>신청 전 공지사항을 확인해 주세요.</p></div>
+    <a href="#notice-detail">VIEW +</a>
+  </div>
+
+  <section aria-labelledby="links-title">
+    <div class="section-title"><h2 id="links-title">LINK</h2></div>
+    <div class="links">
+      <!-- USERNAME과 ROOMCODE를 실제 주소로 교체하세요. -->
+      <a class="link" href="https://x.com/USERNAME" target="_blank" rel="noopener noreferrer"><span class="symbol">𝕏</span><span class="name">TWITTER</span></a>
+      <a class="link" href="https://crepe.cm/USERNAME" target="_blank" rel="noopener noreferrer"><span class="symbol">♡</span><span class="name">CREPE</span></a>
+      <a class="link" href="https://open.kakao.com/o/ROOMCODE" target="_blank" rel="noopener noreferrer"><span class="symbol">☏</span><span class="name">OPEN CHAT</span></a>
+    </div>
+  </section>
+
+  <section id="types" aria-labelledby="types-title">
+    <div class="section-title"><h2 id="types-title">COMMISSION TYPE</h2></div>
+    <p class="desc">원하시는 타입을 선택해 주세요.</p>
+    <div class="types">
+      <a class="type-card" href="#sd-detail"><div class="preview sd">SD</div><div class="type-label"><div><strong>SD TYPE</strong><small>SD 커미션</small></div><span class="arrow">↗</span></div></a>
+      <a class="type-card" href="#ld-detail"><div class="preview ld">LD</div><div class="type-label"><div><strong>LD TYPE</strong><small>LD 커미션</small></div><span class="arrow">↗</span></div></a>
+      <a class="type-card" href="#line-detail"><div class="preview line">LINE</div><div class="type-label"><div><strong>LINE TYPE</strong><small>마감선 커미션</small></div><span class="arrow">↗</span></div></a>
+      <a class="type-card" href="#fixed-detail"><div class="preview fixed">FRAME</div><div class="type-label"><div><strong>FRAME TYPE</strong><small>고정틀 커미션</small></div><span class="arrow">↗</span></div></a>
+    </div>
+  </section>
+
+  <!-- 아래 상세 안내 문구는 본인 커미션 내용에 맞춰 수정하세요. -->
+  <section class="detail" id="notice-detail"><h3>NOTICE · 공지사항</h3><p>신청 전 안내 사항을 작성하는 공간입니다.<br>작업 기간, 수정 가능 횟수, 환불 규정 등을 입력해 주세요.</p><a class="back" href="#top">↑ TOP</a></section>
+  <section class="detail" id="sd-detail"><h3>SD TYPE</h3><p>SD 커미션 상세 안내를 입력해 주세요.<br>가격 · 구성 · 작업 기간 · 샘플 이미지 등을 작성할 수 있습니다.</p><a class="back" href="#types">↑ TYPE 목록</a></section>
+  <section class="detail" id="ld-detail"><h3>LD TYPE</h3><p>LD 커미션 상세 안내를 입력해 주세요.<br>가격 · 구성 · 작업 기간 · 샘플 이미지 등을 작성할 수 있습니다.</p><a class="back" href="#types">↑ TYPE 목록</a></section>
+  <section class="detail" id="line-detail"><h3>LINE TYPE · 마감선</h3><p>마감선 커미션 상세 안내를 입력해 주세요.<br>가격 · 구성 · 작업 기간 · 샘플 이미지 등을 작성할 수 있습니다.</p><a class="back" href="#types">↑ TYPE 목록</a></section>
+  <section class="detail" id="fixed-detail"><h3>FRAME TYPE · 고정틀</h3><p>고정틀 커미션 상세 안내를 입력해 주세요.<br>가격 · 구성 · 작업 기간 · 샘플 이미지 등을 작성할 수 있습니다.</p><a class="back" href="#types">↑ TYPE 목록</a></section>
+
+  <footer>୨୧<br>Thank you for visiting!</footer>
+</div></div>
+</body>
+</html>
